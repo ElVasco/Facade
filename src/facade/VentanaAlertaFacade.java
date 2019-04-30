@@ -14,7 +14,10 @@ public class VentanaAlertaFacade {
 		GeneradorSonidos generadorSonidos = new GeneradorSonidos();
 		GeneradorHistorialVentanas generadorHistorialVentanas = new GeneradorHistorialVentanas();
 		
+		
 		generadoVentanas.generarVentana(alerta);
+		generadorSonidos.generarSonidoAlerta();
+		generadorHistorialVentanas.agregarAccionHistorial("Mostrar ventana de alerta: "+alerta);
 		
 	}
 }
